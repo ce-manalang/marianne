@@ -1,14 +1,47 @@
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mx-auto w-full px-4 sm:px-6 lg:px-8">
   <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
-  <div class="mx-auto max-w-3xl">
+  <div class="mx-auto max-w-7xl">
     <!-- Content goes here -->
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-12 gap-4">
       <div></div>
-      <div>
-        <header><%= Date.today.strftime("%A, %b %d") %></header>
+      <div class="flex col-span-11 gap-4">
+        <span class="flex-none isolate inline-flex rounded-md shadow-sm">
+          <button type="button" class="relative inline-flex items-center rounded-l-md bg-white px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">
+            <span class="sr-only">Previous</span>
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <button type="button" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">
+            <span class="sr-only">Next</span>
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </span>
+        <header class="flex-1 text-4xl tracking-tight text-gray-900">
+          <span class="font-bold">Today: </span>
+          <span><%= Date.today.strftime("%A, %b %d") %></span>
+        </header>
+        <span class="flex-none isolate inline-flex rounded-md shadow-sm">
+          <button type="button" class="relative inline-flex items-center rounded-md bg-white px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">
+            <span class="sr-only">Calendar</span>
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+          </button>
+        </span>
+        <span class="flex-none isolate inline-flex rounded-md shadow-sm">
+          <button type="button" class="relative inline-flex items-center rounded-l-md bg-white px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">
+            <span>Day</span>
+          </button>
+          <button type="button" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">
+            <span>Week</span>
+          </button>
+        </span>
       </div>
       <div>3</div>
-      <div>4</div>
+      <div class="col-span-11">4</div>
     </div>
   </div>
 </div>

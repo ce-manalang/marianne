@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get "time" => "time#index"
 
   # Defines the root path route ("/")
-  root "time#index"
+  root "home#show"
 end
