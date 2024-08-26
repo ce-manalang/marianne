@@ -74,14 +74,46 @@
             </select>
           </div>
           <div class="hidden sm:block">
-            <div class="border-b border-gray-200">
-              <nav class="-mb-px flex" aria-label="Tabs">
-                <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                <a href="#" class="w-1/4 border-b-2 border-transparent px-1 py-4 text-center text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">My Account</a>
-                <a href="#" class="w-1/4 border-b-2 border-transparent px-1 py-4 text-center text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Company</a>
-                <a href="#" class="w-1/4 border-b-2 border-indigo-500 px-1 py-4 text-center text-sm font-medium text-indigo-600" aria-current="page">Team Members</a>
-                <a href="#" class="w-1/4 border-b-2 border-transparent px-1 py-4 text-center text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Billing</a>
-              </nav>
+            <div class="flex border-b border-gray-200">
+              <div class="flex-grow">
+                <nav class="-mb-px flex" aria-label="Tabs">
+                  <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+                  <a href="#" class="w-32 border-b-2 border-transparent px-1 py-4 text-left text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                    <div>Mon</div>
+                    <div>0:00</div>
+                  </a>
+                  <a href="#" class="w-32 border-b-2 border-transparent px-1 py-4 text-left text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                    <div>Tue</div>
+                    <div>0:00</div>
+                  </a>
+                  <a href="#" class="w-32 border-b-2 border-indigo-500 px-1 py-4 text-left text-sm font-medium text-indigo-600" aria-current="page">
+                    <div>Wed</div>
+                    <div>0:00</div>
+                  </a>
+                  <a href="#" class="w-32 border-b-2 border-transparent px-1 py-4 text-left text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                    <div>Thu</div>
+                    <div>0:00</div>
+                  </a>
+                  <a href="#" class="w-32 border-b-2 border-transparent px-1 py-4 text-left text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                    <div>Fri</div>
+                    <div>0:00</div>
+                  </a>
+                  <a href="#" class="w-32 border-b-2 border-transparent px-1 py-4 text-left text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                    <div>Sat</div>
+                    <div>0:00</div>
+                  </a>
+                  <a href="#" class="w-32 border-b-2 border-transparent px-1 py-4 text-left text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                    <div>Sun</div>
+                    <div>0:00</div>
+                  </a>
+                </nav>
+              </div>
+              <div>
+                <div class="border-b-2 border-transparent px-1 py-4 text-right text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                  <div>Week total</div>
+                  <div>0:00</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
